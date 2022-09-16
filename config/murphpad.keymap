@@ -64,19 +64,19 @@
                 &kp COMMA        &kp KP_N1    &kp KP_N2       &kp KP_N3         &kp KP_ENTER
                 &kp BSPC         &kp KP_N0    &trans          &kp KP_DOT        &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
 
         }; 
         
         fn_layer {
             label = "fn layer";
             bindings = <
-                &trans      &trans     &trans        &trans          &trans  
-                &trans      &trans     &trans        &trans          &trans     
-                &trans      &trans     &trans        &trans          &trans
-                &trans      &trans     &trans        &trans          &trans    
-                &trans      &trans     &trans        &trans          &trans
-                &trans      &trans     &trans        &trans          &trans           
+                &trans      &trans         &trans        &trans           &trans  
+                &trans      &bt BT_CLR     &trans        &trans           &trans     
+                &trans      &bt BT_SEL 0   &trans        &rgb_ug RGB_TOG  &trans
+                &trans      &bt BT_SEL 1   &trans        &rgb_ug RGB_EFF  &trans    
+                &trans      &bt BT_SEL 2   &trans        &rgb_ug RGB_EFR  &trans
+                &trans      &trans         &trans        &trans           &trans           
             >;  
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
                 
